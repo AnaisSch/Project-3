@@ -9,6 +9,11 @@ app.listen(3000, () => {
 
 app.use(express.static('./public'));
 
-app.get('/', (req, res) => {
-    res.send(cookies.jpg);
+app.get('/api/user', (req, res) => {
+    res.send({
+        nom: "Padawan",
+        verification: "true",
+        dateAnniversaire: "17/12/1993",
+        copains: (["Fwanck", " Vinsme", "Manaïsme"]),
+    });
 });
