@@ -13,7 +13,7 @@ app.get('/api/user', (req, res) => {
     res.send({
         nom: "Padawan",
         verification: "true",
-        dateAnniversaire: "17/12/1993",
+        dateAnniversaire: new Date(2020, 3, 23),
         copains: (["Fwanck", " Vinsme", "Manaïsme"]),
     });
 });
