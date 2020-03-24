@@ -2,8 +2,10 @@ const express = require("express");
 
 const app = express();
 
+const chalk = require("chalk"); 
 app.listen(3000, () => {
     console.log("LE SERVEUR DÉMARRE...");
+    chalk.green("3000");
 });
 
 app.use(express.static("./public"));  
